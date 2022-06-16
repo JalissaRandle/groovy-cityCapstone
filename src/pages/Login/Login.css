@@ -1,0 +1,54 @@
+.Container{
+    width: 100vw;
+    height: 100vh;
+    background: 
+      url("https://images.pexels.com/photos/1120162/pexels-photo-1120162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+        center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  
+}
+
+.loginform{
+    flex: 1;
+    min-width: 40%;
+    margin: 10px 0;
+    padding: 10px;
+}
+h2{
+    font-size: 50px;
+    font-weight: 700;
+    align-items: center;
+    
+}
+label{
+    font-size: xx-large;
+}
+/* 
+.form-group{
+    flex: 1;
+    min-width: 40%;
+    margin: 10px 0;
+    padding: 10px;
+} */
+
+.inputs{
+    align-items: center;
+    flex: 1;
+    min-width: 70%;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+.button{
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    background-color: ;
+    background: #256ce1;;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
