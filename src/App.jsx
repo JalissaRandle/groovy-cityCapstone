@@ -19,7 +19,8 @@ import CheckOut from "./pages/CheckOut/CheckOut";
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
-
+  const [order, setOrder] = useState({});
+  const [errorMessage, setErrorMessage] = useState('');
 
   const fetchProducts = async () => {
     const { data } = await commerce.products.list();
@@ -49,6 +50,24 @@ function App() {
     setCart(cart);
   }
 
+  const refreshCart =  async () => {
+    const newCart = await commerce.cart.refresh();
+
+    setCart(newCart)
+  }
+
+   const handleCaptureCheckout = async (checkoutTokenId, newOrder) => {
+    try {
+      const incomingOrder = await commerce.checkout.capture(checkoutTokenId, newOrder);
+
+      setOrder(incomingOrder);
+
+      refreshCart();
+    } catch (error) {
+      setErrorMessage(error.data.error.message);
+    }
+  };
+
   const handleEmptyCart = async () => {
     const { cart } = await commerce.cart.empty();
 
@@ -75,19 +94,16 @@ console.log(cart)
           handleRemoveFromCart={handleRemoveFromCart} />} />
         <Route path="/sign-up" element={<SignUp/>} />
         <Route path="/login" element={<LogIn/>} />
-        <Route path="/checkout" element={<CheckOut/>} />
+        <Route path="/checkout" element={<CheckOut 
+            cart={cart}
+            order={order}
+            onCaptureCheckout={handleCaptureCheckout}
+            error={errorMessage}/>} />
         <Route path="/" exact element={<Home/>}/>
-  
-{/*        
-          <Route path="/" exact element={<Home/>}/>
-          <Route path="/products" element={<Products/>} />
-          <Route path="/artist" element={<Artist/>} />
-          <Route path="/sign-up" element={<SignUp/>} />
-          <Route path="/login" element={<LogIn/>} />
-          <Route path="/cart" element={<Cart />} /> */}
+
         </Routes>
       
-    <Footer />
+    <Footer gutterbottom />
      </div>
     </Router>
   );

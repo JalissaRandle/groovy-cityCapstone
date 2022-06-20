@@ -1,3 +1,8 @@
 .home{
     background-image: url("https://www.pexels.com/photo/man-playing-guitar-singing-on-stage-1613240/");
+    text-align: center;
+}
+.image{
+    background-image: url("https://consequence.net/wp-content/uploads/2018/07/us-festival-1983.jpg?quality=80&w=1031&h=580&crop=1&resize=1031%2C580&strip")
+    center;
 }
