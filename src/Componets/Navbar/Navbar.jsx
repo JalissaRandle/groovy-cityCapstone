@@ -5,11 +5,11 @@ import {  Nav, NavLink, Bars, NavMenu, NavBtn, NavBtnLink } from './NavBarElemen
 
 
 
-import useStyles from './NavBarElements';
 
 
 
-const Navbar = () => {
+
+const Navbar = ({ totalItems }) => {
  return(
    <div>
     <Nav>
@@ -27,9 +27,13 @@ const Navbar = () => {
         <NavLink to="/sign-up">
           Sign-up
         </NavLink>
-          <NavLink to="/cart">
-            <ShoppingCart />
-          </NavLink>
+        <IconButton  aria-label='Show cart items' color="inherit">
+            <Badge badgeContent={totalItems} color="secondary">
+              <NavLink to="/cart">
+                <ShoppingCart />
+              </NavLink>
+             </Badge>
+        </IconButton>
       </NavMenu>
       <NavBtn>
         <NavBtnLink to='/login'>Log in</NavBtnLink>
