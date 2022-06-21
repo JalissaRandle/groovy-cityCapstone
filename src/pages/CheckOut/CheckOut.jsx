@@ -1,5 +1,5 @@
 import React, { useState, useEffect }from 'react'
-import {Paper, Stepper, Step, StepLabel, Typography, CircularProcess, Divider, Button} from '@material-ui/core'
+import {Paper, Stepper, Step, StepLabel, Typography} from '@material-ui/core'
 import useStyles from './CheckOutStyles'
 import AddressForm from './AddressForm'
 import PaymentForm from './PaymentForm'
@@ -42,7 +42,7 @@ const CheckOut = ({ cart, order, onCaptureCheckout, error }) => {
     const Confirmation = () => (
       <div>
         <div>
-          <Typography variant="h5"> Thank you for your Purchase</Typography>
+          <Typography variant="h5"> Thank You For Your Purchase</Typography>
         </div>
       </div>
     )

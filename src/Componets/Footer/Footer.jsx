@@ -97,8 +97,7 @@ import {
             <ListItem>Home</ListItem>
             <ListItem>Cart</ListItem>
             <ListItem>Artist</ListItem>
-            <ListItem>Tickets</ListItem>
-            <ListItem>Merch</ListItem>
+            <ListItem>Tickets / Merch</ListItem>
             <ListItem>My Account</ListItem>
           </List>
         </Center>

@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     background: 
-      url("https://images.pexels.com/photos/1120162/pexels-photo-1120162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+      url("https://cdn.hovia.com/app/uploads/70s-rainbow-wave-retro-wallpaper-mural-Plain-820x532.jpg")
         center;
     background-size: cover;
     display: flex;
@@ -47,7 +47,7 @@ label{
     width: 40%;
     border: none;
     padding: 15px 20px;
-    background-color: ;
+    /* background-color: ; */
     background: #256ce1;;
     cursor: pointer;
     margin-bottom: 10px;

@@ -1,0 +1,15 @@
+.page {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: 
+        url("https://cdn.hovia.com/app/uploads/70s-rainbow-wave-retro-wallpaper-mural-Plain-820x532.jpg") 
+        center;
+    background-size:cover ;
+   
+}
+.artistname {
+    font-size: 20px;
+    font-weight: 800; 
+    color: black;
+}

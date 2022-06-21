@@ -2,14 +2,13 @@ import React, { useState, useEffect } from "react";
 import './App.css'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { commerce } from "./lib/commerce";
-// import { CssBaseline } from "@material-ui/core";
 import Footer from "./Componets/Footer/Footer";
 import Navbar from "./Componets/Navbar/Navbar";
 import Home from './pages'
-import Artist from "./pages/Artist";
+import Artist from "./pages/Artist/Artist";
 import LogIn from "./pages/Login/LogIn";
 import Products from "./pages/Products/Produts";
-import SignUp from "./pages/SignUp";
+import SignUp from "./pages/SignUp/SignUp";
 import Cart from "./pages/Cart/Cart";
 import CheckOut from "./pages/CheckOut/CheckOut";
 

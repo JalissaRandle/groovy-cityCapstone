@@ -1,0 +1,39 @@
+.outline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    background: 
+        url("https://cdn.hovia.com/app/uploads/70s-rainbow-wave-retro-wallpaper-mural-Plain-820x532.jpg") 
+        center;
+    background-size:cover ;
+}
+div{
+    align-items: center;
+}
+.title{
+    font-size: 50px;
+    align-items: center;
+    font-weight: 700;
+    margin-top: 100px;
+}
+.input{
+    align-items: center;
+    flex: 1;
+    min-width: 70%;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    font-weight: 800;
+}
+.button{
+    width: 40%;
+    border: none;
+    padding: 15px 20px;
+    font-size: 15px;
+    background: #256ce1;;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
